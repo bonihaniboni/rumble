@@ -18,4 +18,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Speech to Text" />
+
+    <TextView
+        android:id="@+id/textView_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="강건구 바보" />
 </LinearLayout>
