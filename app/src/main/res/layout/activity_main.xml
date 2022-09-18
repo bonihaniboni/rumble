@@ -19,6 +19,12 @@
         android:layout_height="wrap_content"
         android:text="Speech to Text" />
 
+    <Button
+        android:id="@+id/buttonDrugAlarm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="약 알람" />
+
     <TextView
         android:id="@+id/textView_text"
         android:layout_width="match_parent"

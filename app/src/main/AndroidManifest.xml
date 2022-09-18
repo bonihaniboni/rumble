@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+    <!-- 인터넷 오디오 권한 추가 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
     <application
         android:allowBackup="true"
@@ -12,6 +15,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Rumble"
         tools:targetApi="31">
+        <activity
+            android:name=".AlarmActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
             android:name=".NumberSetting"
             android:exported="false">
@@ -47,9 +57,5 @@
                 android:value="" />
         </activity>
     </application>
-
-<!-- 인터넷 오디오 권한 추가-->
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
 </manifest>
